@@ -23,6 +23,6 @@ public class ListTreeServlet extends HttpServlet {
         BusinessService service = new BusinessService();
         List list = service.getAllCategory();
         request.setAttribute("list", list);
-        request.getRequestDispatcher("/listTree.jsp").forward(request, response);
+        request.getRequestDispatcher("listTree.jsp").forward(request, response);
     }
 }
